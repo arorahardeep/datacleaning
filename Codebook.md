@@ -5,7 +5,7 @@ subject 	2
 
 	Serial number of the subject 
 	
-	* 1..30		.Unique identifier assigned to each subject
+	*1..30		.Unique identifier assigned to each subject
 
 activity	18
 
@@ -19,7 +19,9 @@ activity	18
 	* LAYING
 
 feature		72
+
 	Descriptive name of feature (86 values)
+	
  	* timeBodyAccelerationMeanOnXAxisOfPhone                                 
  	* timeBodyAccelerationMeanOnYAxisOfPhone                                 
  	* timeBodyAccelerationMeanOnZAxisOfPhone                                 
@@ -108,5 +110,6 @@ feature		72
  	* fastFourierTransformBodyGyroscopeJerkMagnitudeStandardDeviation   
   	
 mean	numeric
+
 	Mean of each feature by subject and activity
 

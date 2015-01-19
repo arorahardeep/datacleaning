@@ -59,11 +59,12 @@ The run_analysis.R does the following things
 * Groups the data by subject,activity and column variable and calculates mean 
 
   * Used ddply(plyr) function to group the data by subject and activity and calculate mean
+  * This data set has 180 rows and 88 columns
   
 * Tidy's the dataset and represents it in a narrow (vertical) format
 
   * Used gather(tidyr) function to convert all column with features to single column called feature
-  * The final data has the following columns
+  * This data set has 15480 rows and 4 columns as follows
     * subject
     * activity
     * feature

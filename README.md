@@ -32,10 +32,47 @@ The run_analysis.R does the following things
 
   * Creates a new dataset named full with test and training data combined 
 
-* Makes the variable names more descriptive
 * Extracts the mean and standard deviation data out of the above set
+ 
+  * Uses select(dplyr) function to get all the columns with mean and std in their names
+  
+* Makes the variable names more descriptive using the following guidelines
+
+  * Use descriptive name where ever possible
+  * Use camel case for variable naming (makes it readable)
+  * Remove special symbols from the names
+  * Remove any duplication from the names
+  * Following transformation were applied
+    * Replace starting t with time
+    * Replace starting f with fastFourierTransform
+    * Replace Acc with Acceleration
+    * Replace Gyro with Gyroscope
+    * Replace Mag with Magnitude
+    * Replace -mean() with Mean
+    * Replace -std() with StandardDeviation
+    * Replace -X with OnXAxisOfPhone
+    * Replace -Y with OnYAxisOfPhone
+    * Replace -Z with OnZAxisOfPhone
+    * Replace BobyBody in few names with Body
+  
+
 * Groups the data by subject,activity and column variable and calculates mean 
+
+  * Used ddply(plyr) function to group the data by subject and activity and calculate mean
+  
 * Tidy's the dataset and represents it in a narrow (vertical) format
+
+  * Used gather(tidyr) function to convert all column with features to single column called feature
+  * The final data has the following columns
+    * subject
+    * activity
+    * feature
+    * mean
+  
 * Writes the final result to tidyDataSet.txt file
+
+  * Use write.table to dump this table into tidyDataSet.txt
+  * Final dataset is also retured as output from the script
+  
 
 

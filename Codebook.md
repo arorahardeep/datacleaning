@@ -1,15 +1,19 @@
 DATA Dictionary - Human Activity Recognition Using Smartphones Dataset 
 ===============
 
-subject 	2
+subject 	
+	
+	Type: Number 
 
-	Serial number of the subject 
+	Description: Serial number of the subject 
 	
 	*1..30		.Unique identifier assigned to each subject
 
-activity	18
+activity	
 
-	Activity Name (6 values)
+	Type: Character of length 18 
+
+	Description: Activity Name (6 values)
 	
 	* WALKING
 	* WALKING_UPSTAIRS
@@ -18,9 +22,11 @@ activity	18
 	* STANDING
 	* LAYING
 
-feature		72
+feature		
 
-	Descriptive name of feature (86 values)
+	Type: Character of length 72
+
+	Description: Descriptive name of feature (86 values)
 	
  	* timeBodyAccelerationMeanOnXAxisOfPhone                                 
  	* timeBodyAccelerationMeanOnYAxisOfPhone                                 
@@ -109,7 +115,9 @@ feature		72
  	* fastFourierTransformBodyGyroscopeMagnitudeStandardDeviation            
  	* fastFourierTransformBodyGyroscopeJerkMagnitudeStandardDeviation   
   	
-mean	numeric
+mean	
+	
+	Type: Numeric
 
-	Mean of each feature by subject and activity
+	Description: Mean of each feature by subject and activity
 

@@ -2,11 +2,15 @@ DATA Dictionary - Human Activity Recognition Using Smartphones Dataset
 ===============
 
 subject 	2
+
 	Serial number of the subject 
+	
 	* 1..30		.Unique identifier assigned to each subject
 
 activity	18
+
 	Activity Name (6 values)
+	
 	* WALKING
 	* WALKING_UPSTAIRS
 	* WALKING_DOWNSTAIRS
